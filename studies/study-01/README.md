@@ -12,6 +12,7 @@ Study 01 is the first accepted run in this repository. It compares three model r
 - [Evaluator reports](evaluator-reports/)
 - [Evaluation policy](evaluation-policy.json)
 - [Artifact checksums](checksums.sha256)
+- [Indonesian LinkedIn write-up](https://lnkd.in/p/gSTBJgAh)
 
 Study ID: `20260824-003535-offline20`
 

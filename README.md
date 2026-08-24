@@ -29,6 +29,12 @@ Qwen recorded the highest score on this task set. The difference is two tasks, a
 |---|---|---:|---:|---|---|---|
 | [Study 01](studies/study-01/REPORT.md) | 2026-08-24 | 20 | 1 | [`offline20-v1`](protocols/offline20-v1.md) | Qwen 15, Ox 13, Gemini 13 | Complete |
 
+## Public Write-Up
+
+I published a shorter Indonesian account of the experiment, including why I discarded the first run and repeated it without agent internet access:
+
+- [LinkedIn: Ox Alpha SWE-bench Study 01](https://lnkd.in/p/gSTBJgAh)
+
 ## Why The First Attempt Was Discarded
 
 My first benchmark looked much better for Ox Alpha: it resolved 19 of 20 tasks, compared with 18 for Qwen and 11 for Gemini. I nearly treated that as the result.
