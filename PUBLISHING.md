@@ -11,7 +11,6 @@
 - [ ] Confirm no API keys, private endpoints, home paths, or raw provider headers are present
 - [ ] Create a `study-01` GitHub Release if trajectories or raw logs will be attached
 - [ ] Change repository visibility to public
-- [ ] Replace `[LINK REPOSITORY]` in the LinkedIn draft
 - [ ] Publish LinkedIn only after the public link works in an incognito window
 
 ## Local Validation

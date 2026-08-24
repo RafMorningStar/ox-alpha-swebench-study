@@ -4,7 +4,7 @@ This repository documents a series of small SWE-bench experiments comparing Ox A
 
 The project began after Ox Alpha appeared as an unidentified model route on OpenRouter and OpenCode. Its early coding results attracted attention, so I wanted to test it myself instead of relying on anecdotal comparisons.
 
-![Study 01 results: Qwen 15/20, Ox 13/20, Gemini 13/20](assets/study-01-results.svg)
+![Study 01 results: Qwen 15/20, Ox 13/20, Gemini 13/20](assets/study-01-results.png)
 
 ## Latest Study
 

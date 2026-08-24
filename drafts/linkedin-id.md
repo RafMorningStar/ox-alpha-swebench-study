@@ -28,12 +28,6 @@ Bagian yang paling banyak memakan waktu justru bukan menjalankan model. Saya har
 
 Saya menaruh taskset, predictions, evaluator reports, runner, metodologi, dan keterbatasannya di GitHub. Run ini saya simpan sebagai Study 01. Benchmark berikutnya akan menjadi studi baru, bukan menimpa hasil yang sudah ada.
 
-[LINK REPOSITORY]
+https://github.com/RafMorningStar/ox-alpha-swebench-study
 
 #LLMEvaluation #SWEBench #AIEngineering
-
-## Notes Before Posting
-
-- Replace `[LINK REPOSITORY]` after the repository is public.
-- If you have a source for the Fable comparison, link it or name it in a comment. Otherwise keep the wording as a report of community discussion, not a verified claim.
-- Attach [`../assets/study-01-results.svg`](../assets/study-01-results.svg), or export it to PNG before posting.
