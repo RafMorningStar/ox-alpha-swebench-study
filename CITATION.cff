@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this study or its runner, please cite it as below."
+title: "Ox Alpha SWE-bench Studies"
+type: software
+version: 0.1.0
+date-released: 2026-08-24
+authors:
+  - family-names: "Effendi"
+    given-names: "Rafi Putra"
+repository-code: "https://github.com/RafMorningStar/ox-alpha-swebench-study"
+url: "https://github.com/RafMorningStar/ox-alpha-swebench-study"
+license: MIT
+keywords:
+  - SWE-bench
+  - LLM evaluation
+  - coding agents
+  - Ox Alpha

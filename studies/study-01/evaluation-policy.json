@@ -1,0 +1,9 @@
+{
+  "ambiguous_failures": "reported but advisory; do not block final scoring",
+  "applied_at": "2026-08-24T04:57:55+00:00",
+  "network": "docker-default",
+  "previous_artifacts_archived_at": "evaluation-archive/offline-v1-20260824-115755",
+  "reason": "Official SWE-bench eval scripts may install dependencies and run HTTP test services",
+  "retry": "one retry for error_ids and definite infra_failure_ids",
+  "version": 2
+}

@@ -1,0 +1,4 @@
+model_slug,model,resolved,total,solve_rate,api_calls,total_tokens,runtime_seconds
+qwen-38-max,Qwen3.8-Max via Qoder AI,15,20,0.7500,1108,38568224,17417.411
+ox-alpha,Ox Alpha,13,20,0.6500,662,13838434,10118.118
+gemini-37-flash-high,Gemini 3.7 Flash High,13,20,0.6500,2838,144704877,11764.123

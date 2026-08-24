@@ -1,0 +1,179 @@
+{
+  "amendments": [
+    {
+      "applied_at": "2026-08-24T02:00:43+00:00",
+      "fallback_routes": [
+        "oc/x-preview-f-free",
+        "CFR/ox-alpha",
+        "nsrc/stealth/ox-alpha",
+        "openrouter/stealth/ox-alpha"
+      ],
+      "model_slug": "ox-alpha",
+      "previous_model": "x-preview-f-free",
+      "previous_provider": "OpenCode Zen",
+      "reason": "OpenCode Zen endpoint unavailable during five rollouts",
+      "resume_model": "openai/oc/x-preview-f-free",
+      "resume_provider": "9Router with route fallback",
+      "scope": "Only failed Ox Alpha jobs resumed through 9Router; 15 submitted attempt-01 artifacts remain unchanged"
+    }
+  ],
+  "dataset": "SWE-bench/SWE-bench_Verified",
+  "dataset_revision": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+  "evaluation_policy": {
+    "ambiguous_failures": "reported but advisory; do not block final scoring",
+    "applied_at": "2026-08-24T04:57:55+00:00",
+    "network": "docker-default",
+    "previous_artifacts_archived_at": "evaluation-archive/offline-v1-20260824-115755",
+    "reason": "Official SWE-bench eval scripts may install dependencies and run HTTP test services",
+    "retry": "one retry for error_ids and definite infra_failure_ids",
+    "version": 2
+  },
+  "experiment_id": "20260824-003535-offline20",
+  "generated_at": "2026-08-24T05:15:54+00:00",
+  "models": {
+    "gemini-37-flash-high": {
+      "ambiguous_failure_ids": [
+        "pylint-dev__pylint-4604",
+        "pylint-dev__pylint-4661"
+      ],
+      "ambiguous_failure_instances": 2,
+      "api_calls": 2838,
+      "empty_patch_instances": 4,
+      "error_instances": 0,
+      "execution_provider_counts": {},
+      "failure_reasons": {
+        "pylint-dev__pylint-4604": "no_tests_collected",
+        "pylint-dev__pylint-4661": "missing_module"
+      },
+      "infra_failure_ids": [],
+      "infra_failure_instances": 0,
+      "name": "Gemini 3.7 Flash High",
+      "report_path": "reports/gemini-37-flash-high/openai__ag__gemini-3.7-flash-high.20260824-003535-offline20-gemini-37-flash-high.json",
+      "requested_model_id": "openai/ag/gemini-3.7-flash-high",
+      "resolved": 13,
+      "resolved_ids": [
+        "astropy__astropy-7606",
+        "astropy__astropy-7671",
+        "django__django-17087",
+        "matplotlib__matplotlib-25122",
+        "psf__requests-1766",
+        "psf__requests-5414",
+        "pydata__xarray-7233",
+        "pytest-dev__pytest-7236",
+        "pytest-dev__pytest-7432",
+        "scikit-learn__scikit-learn-10297",
+        "scikit-learn__scikit-learn-13124",
+        "sphinx-doc__sphinx-9320",
+        "sympy__sympy-13877"
+      ],
+      "route_counts": {},
+      "runtime_seconds": 11764.123,
+      "solve_rate": 0.65,
+      "total": 20,
+      "usage": {
+        "completion_tokens": 323221,
+        "prompt_tokens": 144381656,
+        "total_tokens": 144704877
+      }
+    },
+    "ox-alpha": {
+      "ambiguous_failure_ids": [
+        "pylint-dev__pylint-4604",
+        "pylint-dev__pylint-4661"
+      ],
+      "ambiguous_failure_instances": 2,
+      "api_calls": 662,
+      "empty_patch_instances": 0,
+      "error_instances": 0,
+      "execution_provider_counts": {
+        "9Router with route fallback": 5,
+        "OpenCode Zen (legacy attempt-01)": 15
+      },
+      "failure_reasons": {
+        "pylint-dev__pylint-4604": "no_tests_collected",
+        "pylint-dev__pylint-4661": "missing_module"
+      },
+      "infra_failure_ids": [],
+      "infra_failure_instances": 0,
+      "name": "Ox Alpha",
+      "report_path": "reports/ox-alpha/ox-alpha-mixed-routing.20260824-003535-offline20-ox-alpha.json",
+      "requested_model_id": "openai/oc/x-preview-f-free",
+      "resolved": 13,
+      "resolved_ids": [
+        "astropy__astropy-7606",
+        "astropy__astropy-7671",
+        "django__django-17087",
+        "matplotlib__matplotlib-25122",
+        "psf__requests-5414",
+        "pydata__xarray-7233",
+        "pytest-dev__pytest-7236",
+        "pytest-dev__pytest-7432",
+        "scikit-learn__scikit-learn-10297",
+        "scikit-learn__scikit-learn-13124",
+        "sphinx-doc__sphinx-9320",
+        "sympy__sympy-13877",
+        "sympy__sympy-18211"
+      ],
+      "route_counts": {
+        "oc/x-preview-f-free": 278
+      },
+      "runtime_seconds": 10118.118,
+      "solve_rate": 0.65,
+      "total": 20,
+      "usage": {
+        "completion_tokens": 246529,
+        "prompt_tokens": 13591905,
+        "total_tokens": 13838434
+      }
+    },
+    "qwen-38-max": {
+      "ambiguous_failure_ids": [
+        "pylint-dev__pylint-4604",
+        "pylint-dev__pylint-4661"
+      ],
+      "ambiguous_failure_instances": 2,
+      "api_calls": 1108,
+      "empty_patch_instances": 0,
+      "error_instances": 0,
+      "execution_provider_counts": {},
+      "failure_reasons": {
+        "pylint-dev__pylint-4604": "no_tests_collected",
+        "pylint-dev__pylint-4661": "missing_module"
+      },
+      "infra_failure_ids": [],
+      "infra_failure_instances": 0,
+      "name": "Qwen3.8-Max via Qoder AI",
+      "report_path": "reports/qwen-38-max/openai__qd__qmodel_38max.20260824-003535-offline20-qwen-38-max.json",
+      "requested_model_id": "openai/qd/qmodel_38max",
+      "resolved": 15,
+      "resolved_ids": [
+        "astropy__astropy-7606",
+        "astropy__astropy-7671",
+        "django__django-17087",
+        "matplotlib__matplotlib-25122",
+        "psf__requests-1766",
+        "psf__requests-5414",
+        "pydata__xarray-6461",
+        "pydata__xarray-7233",
+        "pytest-dev__pytest-7236",
+        "pytest-dev__pytest-7432",
+        "scikit-learn__scikit-learn-10297",
+        "scikit-learn__scikit-learn-13124",
+        "sphinx-doc__sphinx-9320",
+        "sympy__sympy-13877",
+        "sympy__sympy-18211"
+      ],
+      "route_counts": {},
+      "runtime_seconds": 17417.411,
+      "solve_rate": 0.75,
+      "total": 20,
+      "usage": {
+        "completion_tokens": 1194709,
+        "prompt_tokens": 37373515,
+        "total_tokens": 38568224
+      }
+    }
+  },
+  "selection": "fresh repo-balanced round-robin",
+  "task_count": 20
+}

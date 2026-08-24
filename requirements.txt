@@ -1,0 +1,7 @@
+datasets==5.0.1
+litellm==1.97.0
+mini-swe-agent==2.4.6
+openai
+PyYAML
+rich
+swebench==5.0.2

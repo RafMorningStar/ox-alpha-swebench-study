@@ -1,0 +1,457 @@
+{
+  "amendments": [
+    {
+      "applied_at": "2026-08-24T02:00:43+00:00",
+      "fallback_routes": [
+        "oc/x-preview-f-free",
+        "CFR/ox-alpha",
+        "nsrc/stealth/ox-alpha",
+        "openrouter/stealth/ox-alpha"
+      ],
+      "model_slug": "ox-alpha",
+      "previous_model": "x-preview-f-free",
+      "previous_provider": "OpenCode Zen",
+      "reason": "OpenCode Zen endpoint unavailable during five rollouts",
+      "resume_model": "openai/oc/x-preview-f-free",
+      "resume_provider": "9Router with route fallback",
+      "scope": "Only failed Ox Alpha jobs resumed through 9Router; 15 submitted attempt-01 artifacts remain unchanged"
+    }
+  ],
+  "created_at": "2026-08-23T17:35:43+00:00",
+  "dataset": "SWE-bench/SWE-bench_Verified",
+  "dataset_revision": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+  "dataset_sha256": "182a9cc8228cfa68335313a080c0faa94378766f6eb9529e5c4894b26d7f285e",
+  "dataset_split": "test",
+  "excluded_previous_instances": 29,
+  "experiment_id": "20260824-003535-offline20",
+  "limits": {
+    "hard_timeout_seconds": 2700,
+    "max_per_model": 2,
+    "network": "none",
+    "step_limit": 250,
+    "workers": 4
+  },
+  "models": {
+    "gemini-37-flash-high": {
+      "key_env": "NINEROUTER_API_KEY",
+      "model": "openai/ag/gemini-3.7-flash-high",
+      "name": "Gemini 3.7 Flash High",
+      "provider": "9Router / Qoder AI"
+    },
+    "ox-alpha": {
+      "evaluation_label": "ox-alpha-mixed-routing",
+      "fallback_routes": [
+        "oc/x-preview-f-free",
+        "CFR/ox-alpha",
+        "nsrc/stealth/ox-alpha",
+        "openrouter/stealth/ox-alpha"
+      ],
+      "key_env": "NINEROUTER_API_KEY",
+      "model": "openai/oc/x-preview-f-free",
+      "name": "Ox Alpha",
+      "provider": "9Router with route fallback"
+    },
+    "qwen-38-max": {
+      "key_env": "NINEROUTER_API_KEY",
+      "model": "openai/qd/qmodel_38max",
+      "name": "Qwen3.8-Max via Qoder AI",
+      "provider": "9Router / Qoder AI"
+    }
+  },
+  "schedule": [
+    {
+      "instance_id": "sympy__sympy-18211",
+      "job_id": "0000-ox-alpha-sympy__sympy-18211",
+      "model_slug": "ox-alpha",
+      "ordinal": 0
+    },
+    {
+      "instance_id": "sympy__sympy-18211",
+      "job_id": "0001-gemini-37-flash-high-sympy__sympy-18211",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 1
+    },
+    {
+      "instance_id": "sympy__sympy-18211",
+      "job_id": "0002-qwen-38-max-sympy__sympy-18211",
+      "model_slug": "qwen-38-max",
+      "ordinal": 2
+    },
+    {
+      "instance_id": "sympy__sympy-13877",
+      "job_id": "0003-gemini-37-flash-high-sympy__sympy-13877",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 3
+    },
+    {
+      "instance_id": "sympy__sympy-13877",
+      "job_id": "0004-qwen-38-max-sympy__sympy-13877",
+      "model_slug": "qwen-38-max",
+      "ordinal": 4
+    },
+    {
+      "instance_id": "sympy__sympy-13877",
+      "job_id": "0005-ox-alpha-sympy__sympy-13877",
+      "model_slug": "ox-alpha",
+      "ordinal": 5
+    },
+    {
+      "instance_id": "pylint-dev__pylint-4604",
+      "job_id": "0006-qwen-38-max-pylint-dev__pylint-4604",
+      "model_slug": "qwen-38-max",
+      "ordinal": 6
+    },
+    {
+      "instance_id": "pylint-dev__pylint-4604",
+      "job_id": "0007-ox-alpha-pylint-dev__pylint-4604",
+      "model_slug": "ox-alpha",
+      "ordinal": 7
+    },
+    {
+      "instance_id": "pylint-dev__pylint-4604",
+      "job_id": "0008-gemini-37-flash-high-pylint-dev__pylint-4604",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 8
+    },
+    {
+      "instance_id": "pylint-dev__pylint-4661",
+      "job_id": "0009-ox-alpha-pylint-dev__pylint-4661",
+      "model_slug": "ox-alpha",
+      "ordinal": 9
+    },
+    {
+      "instance_id": "pylint-dev__pylint-4661",
+      "job_id": "0010-gemini-37-flash-high-pylint-dev__pylint-4661",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 10
+    },
+    {
+      "instance_id": "pylint-dev__pylint-4661",
+      "job_id": "0011-qwen-38-max-pylint-dev__pylint-4661",
+      "model_slug": "qwen-38-max",
+      "ordinal": 11
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7432",
+      "job_id": "0012-gemini-37-flash-high-pytest-dev__pytest-7432",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 12
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7432",
+      "job_id": "0013-qwen-38-max-pytest-dev__pytest-7432",
+      "model_slug": "qwen-38-max",
+      "ordinal": 13
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7432",
+      "job_id": "0014-ox-alpha-pytest-dev__pytest-7432",
+      "model_slug": "ox-alpha",
+      "ordinal": 14
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-25122",
+      "job_id": "0015-qwen-38-max-matplotlib__matplotlib-25122",
+      "model_slug": "qwen-38-max",
+      "ordinal": 15
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-25122",
+      "job_id": "0016-ox-alpha-matplotlib__matplotlib-25122",
+      "model_slug": "ox-alpha",
+      "ordinal": 16
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-25122",
+      "job_id": "0017-gemini-37-flash-high-matplotlib__matplotlib-25122",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 17
+    },
+    {
+      "instance_id": "astropy__astropy-7671",
+      "job_id": "0018-ox-alpha-astropy__astropy-7671",
+      "model_slug": "ox-alpha",
+      "ordinal": 18
+    },
+    {
+      "instance_id": "astropy__astropy-7671",
+      "job_id": "0019-gemini-37-flash-high-astropy__astropy-7671",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 19
+    },
+    {
+      "instance_id": "astropy__astropy-7671",
+      "job_id": "0020-qwen-38-max-astropy__astropy-7671",
+      "model_slug": "qwen-38-max",
+      "ordinal": 20
+    },
+    {
+      "instance_id": "pydata__xarray-6461",
+      "job_id": "0021-gemini-37-flash-high-pydata__xarray-6461",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 21
+    },
+    {
+      "instance_id": "pydata__xarray-6461",
+      "job_id": "0022-qwen-38-max-pydata__xarray-6461",
+      "model_slug": "qwen-38-max",
+      "ordinal": 22
+    },
+    {
+      "instance_id": "pydata__xarray-6461",
+      "job_id": "0023-ox-alpha-pydata__xarray-6461",
+      "model_slug": "ox-alpha",
+      "ordinal": 23
+    },
+    {
+      "instance_id": "psf__requests-5414",
+      "job_id": "0024-qwen-38-max-psf__requests-5414",
+      "model_slug": "qwen-38-max",
+      "ordinal": 24
+    },
+    {
+      "instance_id": "psf__requests-5414",
+      "job_id": "0025-ox-alpha-psf__requests-5414",
+      "model_slug": "ox-alpha",
+      "ordinal": 25
+    },
+    {
+      "instance_id": "psf__requests-5414",
+      "job_id": "0026-gemini-37-flash-high-psf__requests-5414",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 26
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9320",
+      "job_id": "0027-ox-alpha-sphinx-doc__sphinx-9320",
+      "model_slug": "ox-alpha",
+      "ordinal": 27
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9320",
+      "job_id": "0028-gemini-37-flash-high-sphinx-doc__sphinx-9320",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 28
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9320",
+      "job_id": "0029-qwen-38-max-sphinx-doc__sphinx-9320",
+      "model_slug": "qwen-38-max",
+      "ordinal": 29
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "job_id": "0030-gemini-37-flash-high-scikit-learn__scikit-learn-13124",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 30
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "job_id": "0031-qwen-38-max-scikit-learn__scikit-learn-13124",
+      "model_slug": "qwen-38-max",
+      "ordinal": 31
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "job_id": "0032-ox-alpha-scikit-learn__scikit-learn-13124",
+      "model_slug": "ox-alpha",
+      "ordinal": 32
+    },
+    {
+      "instance_id": "django__django-17087",
+      "job_id": "0033-qwen-38-max-django__django-17087",
+      "model_slug": "qwen-38-max",
+      "ordinal": 33
+    },
+    {
+      "instance_id": "django__django-17087",
+      "job_id": "0034-ox-alpha-django__django-17087",
+      "model_slug": "ox-alpha",
+      "ordinal": 34
+    },
+    {
+      "instance_id": "django__django-17087",
+      "job_id": "0035-gemini-37-flash-high-django__django-17087",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 35
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10297",
+      "job_id": "0036-ox-alpha-scikit-learn__scikit-learn-10297",
+      "model_slug": "ox-alpha",
+      "ordinal": 36
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10297",
+      "job_id": "0037-gemini-37-flash-high-scikit-learn__scikit-learn-10297",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 37
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10297",
+      "job_id": "0038-qwen-38-max-scikit-learn__scikit-learn-10297",
+      "model_slug": "qwen-38-max",
+      "ordinal": 38
+    },
+    {
+      "instance_id": "psf__requests-1766",
+      "job_id": "0039-gemini-37-flash-high-psf__requests-1766",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 39
+    },
+    {
+      "instance_id": "psf__requests-1766",
+      "job_id": "0040-qwen-38-max-psf__requests-1766",
+      "model_slug": "qwen-38-max",
+      "ordinal": 40
+    },
+    {
+      "instance_id": "psf__requests-1766",
+      "job_id": "0041-ox-alpha-psf__requests-1766",
+      "model_slug": "ox-alpha",
+      "ordinal": 41
+    },
+    {
+      "instance_id": "astropy__astropy-7606",
+      "job_id": "0042-qwen-38-max-astropy__astropy-7606",
+      "model_slug": "qwen-38-max",
+      "ordinal": 42
+    },
+    {
+      "instance_id": "astropy__astropy-7606",
+      "job_id": "0043-ox-alpha-astropy__astropy-7606",
+      "model_slug": "ox-alpha",
+      "ordinal": 43
+    },
+    {
+      "instance_id": "astropy__astropy-7606",
+      "job_id": "0044-gemini-37-flash-high-astropy__astropy-7606",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 44
+    },
+    {
+      "instance_id": "pydata__xarray-7233",
+      "job_id": "0045-ox-alpha-pydata__xarray-7233",
+      "model_slug": "ox-alpha",
+      "ordinal": 45
+    },
+    {
+      "instance_id": "pydata__xarray-7233",
+      "job_id": "0046-gemini-37-flash-high-pydata__xarray-7233",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 46
+    },
+    {
+      "instance_id": "pydata__xarray-7233",
+      "job_id": "0047-qwen-38-max-pydata__xarray-7233",
+      "model_slug": "qwen-38-max",
+      "ordinal": 47
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7748",
+      "job_id": "0048-gemini-37-flash-high-sphinx-doc__sphinx-7748",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 48
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7748",
+      "job_id": "0049-qwen-38-max-sphinx-doc__sphinx-7748",
+      "model_slug": "qwen-38-max",
+      "ordinal": 49
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7748",
+      "job_id": "0050-ox-alpha-sphinx-doc__sphinx-7748",
+      "model_slug": "ox-alpha",
+      "ordinal": 50
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26208",
+      "job_id": "0051-qwen-38-max-matplotlib__matplotlib-26208",
+      "model_slug": "qwen-38-max",
+      "ordinal": 51
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26208",
+      "job_id": "0052-ox-alpha-matplotlib__matplotlib-26208",
+      "model_slug": "ox-alpha",
+      "ordinal": 52
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26208",
+      "job_id": "0053-gemini-37-flash-high-matplotlib__matplotlib-26208",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 53
+    },
+    {
+      "instance_id": "django__django-16502",
+      "job_id": "0054-ox-alpha-django__django-16502",
+      "model_slug": "ox-alpha",
+      "ordinal": 54
+    },
+    {
+      "instance_id": "django__django-16502",
+      "job_id": "0055-gemini-37-flash-high-django__django-16502",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 55
+    },
+    {
+      "instance_id": "django__django-16502",
+      "job_id": "0056-qwen-38-max-django__django-16502",
+      "model_slug": "qwen-38-max",
+      "ordinal": 56
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7236",
+      "job_id": "0057-gemini-37-flash-high-pytest-dev__pytest-7236",
+      "model_slug": "gemini-37-flash-high",
+      "ordinal": 57
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7236",
+      "job_id": "0058-qwen-38-max-pytest-dev__pytest-7236",
+      "model_slug": "qwen-38-max",
+      "ordinal": 58
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7236",
+      "job_id": "0059-ox-alpha-pytest-dev__pytest-7236",
+      "model_slug": "ox-alpha",
+      "ordinal": 59
+    }
+  ],
+  "schema_version": 1,
+  "seed": 20260824,
+  "selection": "fresh repo-balanced round-robin",
+  "task_count": 20,
+  "task_ids": [
+    "django__django-17087",
+    "matplotlib__matplotlib-26208",
+    "sphinx-doc__sphinx-9320",
+    "pydata__xarray-7233",
+    "pytest-dev__pytest-7432",
+    "sympy__sympy-18211",
+    "psf__requests-5414",
+    "astropy__astropy-7606",
+    "pylint-dev__pylint-4604",
+    "scikit-learn__scikit-learn-13124",
+    "django__django-16502",
+    "matplotlib__matplotlib-25122",
+    "sphinx-doc__sphinx-7748",
+    "pydata__xarray-6461",
+    "pytest-dev__pytest-7236",
+    "sympy__sympy-13877",
+    "psf__requests-1766",
+    "astropy__astropy-7671",
+    "pylint-dev__pylint-4661",
+    "scikit-learn__scikit-learn-10297"
+  ],
+  "versions": {
+    "datasets": "5.0.1",
+    "docker": "29.7.2",
+    "litellm": "1.97.0",
+    "mini-swe-agent": "2.4.6",
+    "python": "3.14.7",
+    "swebench": "5.0.2"
+  }
+}
